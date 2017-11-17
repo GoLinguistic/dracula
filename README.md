@@ -3,8 +3,18 @@
 
 Dracula (inspired by *DatQL-a* or *dat-quill-a*) is a small JavaScript module for running
 [DatQL](https://github.com/Nickersoft/dql) queries directly against your
-database, as opposed to simply returning the generated SQL. The API is
-incredibly simple to use, and is designed only for recent versions of Node. For
+database, as opposed to simply returning the generated SQL. You can install it
+via NPM or Yarn:
+
+```bash
+$ npm install dracula --save-dev
+$ yarn add dracula --dev
+```
+
+Be sure to install v0.0.3 or up, or else you'll get the original library registered
+under the "dracula" package name (a now defunct package by [Bozhidar Dryanovski](https://github.com/bdryanovski)).
+
+The API is incredibly simple to use, and is designed only for recent versions of Node. For
 example, to hook DatQL into Postgres using Dracula:
 
 ```javascript
